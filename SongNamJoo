@@ -5,7 +5,7 @@
 \usepackage{CJKutf8}
 \usepackage[pdftex]{graphicx}
 
-\title{OpenSource-02 TeamProject}
+\title{OpenSourceSW TeamProject-05}
 \author{이행석 송남주 하지민}
 
 \begin{document}
@@ -22,42 +22,149 @@
     \chapter{키 설명 및 게임 방법}
      \section{초기 게임 화면}
      \large
-    \subsection{팀 체력 바}
-    \\
-    \ 각 팀의 총 체력을 나타냅니다.
-    \\
-    고슴도치(플레이어가 조종하는 캐릭터, 2번)들이 공격당하면, 해당 고슴도치가 속한 팀의 체력 바가 감소합니다.
-    \\
-    \\
-    \textbf{2. 고슴도치}
-    \\
-    \ 플레이어와 컴퓨터가 움직이는 캐릭터입니다. 무기를 들고 상대 고슴도치를 공격해서 상대방의 모든 고슴도치를 잡는 것이 주 목표입니다.
-    \\
-    \textbf{3. 제한 시간}
-    \\
-    \ 고슴도치가 움직이거나 공격할 수 있는 제한 시간입니다. 제한 시간이 지나면 상대팀에게 턴이 넘어갑니다.
-    \\
-    \textbf{4. 바람 세기}
-    \\
-    \ 바람이 어느 방향으로 얼마나 세게 부는 지를 나타냅니다.
-바의 가리키는 방향 표시가 길면 길수록 세기가 강합니다.
-    \\
-    \textbf{5. 무기 메뉴}
-    \\
-    \ 이번 게임에서 플레이어가 사용할 수 있는 무기를 테이블 형태로 나열해 놓았습니다.
-이 무기 중 하나를 선택하면 플레이어가 움직이는 고슴도치가 해당 무기를 지닙니다.
-빨간색 원 표시가 있는 회색 무기들은 빨간색 원에 안에 있는 숫자 턴만큼만 해당 무기를 사용할 수 있습니다. 
-    \\
-    \textbf{6. 채팅}
-    \\
-    \ 멀티플레이 시 플레이어와 상대방의 가장 최근 대화 내용을 볼 수 있습니다.
-    \\
-    \textbf{7. FPS}
-    \\
-    \ 게임 진행 간 초당 프레임 수를 나타냅니다.
-    \\
-    \end{flushleft}
+    \subsection{팀 체력바}
+    \begin{itemize}
+        \item 각 팀의 총 체력을 나타냅니다.
+        \item 고슴도치(플레이어가 조종하는 캐릭터, 2번)들이 공격당하면, 해당 고슴도치가 속한 팀의 체력 바가 감소합니다.
+    \end{itemize}
+    \subsection{고슴도치}
+    \begin{itemize}
+        \item 플레이어와 컴퓨터가 움직이는 캐릭터입니다. \item 무기를 들고 상대 고슴도치를 공격해서 상대방의 모든 고슴도치를 잡는 것이 주 목표입니다.
+    \end{itemize}
+    \subsection{제한시간}
+        \begin{itemize}
+        \item 고슴도치가 움직이거나 공격할 수 있는 제한 시간입니다. 
+        \item 제한 시간이 지나면 상대팀에게 턴이 넘어갑니다.
+    \end{itemize}
+    \subsection{바람세기}
+    \begin{itemize}
+        \item 바람이 어느 방향으로 얼마나 세게 부는 지를 나타냅니다.
+        \item 바의 가리키는 방향 표시가 길면 길수록 세기가 강합니다.
+    \end{itemize}
+    \subsection{무기메뉴}
+    \begin{itemize}
+        \item 이번 게임에서 플레이어가 사용할 수 있는 무기를 테이블 형태로 나열해 놓았습니다. 
+        \item 이 무기 중 하나를 선택하면 플레이어가 움직이는 고슴도치가 해당 무기를 지닙니다.
+        \item 빨간색 원 표시가 있는 회색 무기들은 빨간색 원에 안에 있는 숫자 턴만큼만 해당 무기를 사용할 수 있습니다. 
+    \end{itemize}
+    \subsection{채팅}
+    \begin{itemize}
+        \item 멀티플레이 시 플레이어와 상대방의 가장 최근 대화 내용을 볼 수 있습니다. 
+    \end{itemize}
+    \subsection{FPS}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
     
-    \center
+    \section{기본적인 움직임 및 슈팅}
+    \subsection{Cursor keys}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{Enter}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{Backspace}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{Left Shift}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{Mouse clicks}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{Space bar}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    
+    \section{조준 및 무기 변경}
+    \subsection{F1 TO F10}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{1 TO 5}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{TAB}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{H}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{Delete}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    
+    
+    \section{게임 옵션과 채팅 커맨드}
+    \subsection{ESC}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{F12}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{9 AND 0}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{P}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{T}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{`}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{C}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    
+    \section{추가 제어키}
+    \subsection{Y}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{F12}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{9 AND 0}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{P}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{T}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{`}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{C}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    
+    \end{flushleft}
 
 \end{document}
