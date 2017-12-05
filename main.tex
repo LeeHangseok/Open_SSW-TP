@@ -1,0 +1,277 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{kotex}
+\usepackage{xeCJK}
+\usepackage{CJKutf8}
+\usepackage[pdftex]{graphicx}
+
+\title{OpenSourceSW TeamProject-05}
+\author{이행석 송남주 하지민}
+
+\begin{document}
+
+    \maketitle
+    \begin{flushleft}   
+    \tableofcontents{}
+
+    \Large
+    \chapter{오픈 소스 SW  개요 및 설치}
+     \section{본 오픈소스 선택 이유}
+      \begin{itemize}
+        \item 현재 많은 오픈 소스 소프트웨어 툴들이 존재하지만, 대부분은 작업을 수행함에 있어 편리함을 추구하기 위하여 배포되고 있습니다.
+        \item 이에 따라 본 팀은 흥미를 위한 게임 분야에도 오픈 SW가 있는 가에 대한 의문을 품게 되었으며, 여러 조사를 통해 Hedgewars라는 게임을 선택하게 되었습니다.
+    \end{itemize}
+     \section{오픈 소스 SW 개요}
+      \begin{itemize}
+        \item 턴 제 전략 게임인 Worms와 유사합니다
+        \item 플레이어 마다 각 턴이 주어지며, 해당 턴의 시간 안에 마음껏 위치를 변경하여 여러 무기들 중 하나를 골라 상대방에게 피해를 입히는 게임입니다.
+        \item 싱글플레이와 멀티플레이를 지원하며, 게임에 어려움을 느낄 사람들을 위해 트레이닝 맵도 마련되어 있습니다.
+        \item 언어 또한 해당 OS의 설정 언어에 맞추어 변경 되므로, 언어 사항에 제약이 따르지 않습니다.
+        \item  Windows 와 모바일 iOS 환경에서 제공이 되며 설치를 통해 실행 가능합니다.
+    \end{itemize}
+    
+    \begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]
+
+{Image/worms.JPG}
+
+\caption{실제 worms 플레이 화면}
+\label{fig:detect}
+\end{figure}
+
+    \begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]
+
+{Image/HedgeWars.JPG}
+
+\caption{실제 Hedgewars 플레이 화면}
+\label{fig:detect}
+\end{figure}
+
+     
+  \section{설치 방법}
+  \subsection{홈페이지 접속}
+    \begin{itemize}
+  \item http://www.hedgewars.org/ 사이트를 통해 Hedgewars를 다운로드 받을 수 있습니다.
+  \item 현재 나와 있는 릴리즈 버전과 배포 일자, 변경 점 및 다운로드 링크와 오른쪽에는 멀티플레이를 할 때 필요한 계정 생성, 현재 서버 내에 개설된 방과 플레이 중인 인원 수가 나와 있습니다.
+   \end{itemize}
+  
+   \begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]
+
+{Image/homepage.JPG}
+
+\caption{Hedgewars 사이트의 모습}
+\label{fig:detect}
+\end{figure}
+  
+  \subsection{다운로드 링크}
+   \begin{itemize}
+  \item 상단 혹은 우측의 Download 버튼을 통해 이동합니다.
+  \item 윈도우 버전 내의 인스톨 파일과 토렌트 파일이 존재하며, 소스 코드 또한 제공해 주고 있습니다. 최신 릴리스 버전 하단에는 패키지 매니저를 제공하며, 그 밑에는 iOS 다운로드 링크와 git의 repository를 보여주고 있습니다.
+  \item 그림에 표시된 다운로드 링크를 통해 설치를 진행합니다.
+     \end{itemize}
+      \begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]
+{Image/download.JPG}
+\caption{다운로드 링크 진입 시 화면}
+\label{fig:detect}
+\end{figure}
+
+  \subsection{라이센스 동의}
+    \begin{itemize}
+  \item 실행 창이 시작되면 다음을 눌러준 후 라이센스에 관한 사항을 읽고 동의함을 클릭합니다.
+     \end{itemize}
+      \begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]
+{Image/install2.JPG}
+\caption{라이센스 동의 확인 창}
+\label{fig:detect}
+\end{figure}
+    \chapter{2장}
+     \section{2장 부}
+    \chapter{키 설명 및 게임 방법}
+     \section{초기 게임 화면}
+     \large
+    \subsection{팀 체력바}
+    \begin{itemize}
+        \item 각 팀의 총 체력을 나타냅니다.
+        \item 고슴도치(플레이어가 조종하는 캐릭터, 2번)들이 공격당하면, 해당 고슴도치가 속한 팀의 체력 바가 감소합니다.
+    \end{itemize}
+    \subsection{고슴도치}
+    \begin{itemize}
+        \item 플레이어와 컴퓨터가 움직이는 캐릭터입니다. \item 무기를 들고 상대 고슴도치를 공격해서 상대방의 모든 고슴도치를 잡는 것이 주 목표입니다.
+    \end{itemize}
+    \subsection{제한시간}
+        \begin{itemize}
+        \item 고슴도치가 움직이거나 공격할 수 있는 제한 시간입니다. 
+        \item 제한 시간이 지나면 상대팀에게 턴이 넘어갑니다.
+    \end{itemize}
+    \subsection{바람세기}
+    \begin{itemize}
+        \item 바람이 어느 방향으로 얼마나 세게 부는 지를 나타냅니다.
+        \item 바의 가리키는 방향 표시가 길면 길수록 세기가 강합니다.
+    \end{itemize}
+    \subsection{무기메뉴}
+    \begin{itemize}
+        \item 이번 게임에서 플레이어가 사용할 수 있는 무기를 테이블 형태로 나열해 놓았습니다. 
+        \item 무기 메뉴 중 하나를 선택하면 플레이어가 움직이는 고슴도치가 선택한 무기를 지닙니다.
+        \item 빨간색 원 표시가 있는 회색 무기들은 빨간색 원에 안에 있는 숫자 턴만큼만 해당 무기를 사용할 수 있습니다. 
+    \end{itemize}
+    \subsection{채팅}
+    \begin{itemize}
+        \item 멀티플레이 시 플레이어와 상대방의 가장 최근 대화 내용을 볼 수 있습니다. 
+    \end{itemize}
+    \subsection{FPS}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    
+    \section{기본적인 움직임 및 슈팅}
+    \subsection{Cursor keys}
+    \begin{itemize}
+        \item ← → 키를 이용해 고슴도치를 왼쪽 또는 오른쪽으로 움직일 수 있습니다.
+        \item ↑ ↓ 키를 이용해 무기 조준점을 움직일 수 있습니다.
+    \end{itemize}
+    \subsection{Enter}
+    \begin{itemize}
+        \item 현재 선택된 고슴도치가 앞으로 점프합니다. 
+        \item 너무 높은 곳에서 떨어지면 체력 바가 닳게 됩니다.
+        \item 로프나 비행접시를 사용해 이동하는 동안, 엔터를 활용해서 무기를 던지거나 떨어트릴 수 있습니다. 예를 들어, 로프를 사용하면서 다이너마이트를 떨어트릴 수 있습니다.
+    \end{itemize}
+    \subsection{Backspace}
+    \begin{itemize}
+        \item 한 번 누르면 수직으로 점프하고
+ 두 번 누르면 뒤로 점프합니다. 
+        \item 백스페이스를 두 번째 누를 때 좀 더 긴 시간을 두고 누르면 더 높게 점프합니다.
+    \end{itemize}
+    \subsection{Left Shift}
+    \begin{itemize}
+        \item 표적을 정확히 조준할 때 사용합니다. 
+        \item 시프트를 누른 채 조준 키를 움직여 천천히 조준점을 이동하여 정밀 사격이 가능합니다.
+        \item  이 키를 누른 상태에서 왼쪽이나 오른쪽으로 움직여도 움직이지 않고 제자리에서 방향 전환만 합니다.
+    \end{itemize}
+    \subsection{Mouse clicks}
+    \begin{itemize}
+        \item 마우스 오른쪽을 클릭하면 무기 메뉴를 보여줍니다.
+        \item 마우스 왼쪽을 클릭하면 메뉴에서 무기를 선택하거나, 공습과 같은 공격 타겟을 설정할 수 있습니다.
+    \end{itemize}
+    \subsection{Space bar}
+    \begin{itemize}
+        \item 플레이어의 고슴도치가 선택한 무기를 가지고 조준하고 있는 방향으로 공격할 수 하도록 만듭니다.
+        \item 길게 누를수록 무기를 발사하는 힘이 강해집니다.
+    \end{itemize}
+    
+    \section{조준 및 무기 변경}
+    \subsection{F1 TO F10}
+    \begin{itemize}
+        \item 마우스 오른쪽 버튼을 클릭하는 대신 F1-F10을 사용해 무기를 변경할 수 있습니다.
+    \end{itemize}
+    \subsection{1 TO 5}
+    \begin{itemize}
+        \item 수류탄과 같은 일정 시간 후 폭발하는 무기의 시간을 설정할 수 있습니다. 
+    \end{itemize}
+    \subsection{TAB}
+    \begin{itemize}
+        \item 플레이어가 가지고 있는 고슴도치 내에서 움직이고자하는 고슴도치를 전환합니다. 
+    \end{itemize}
+    \subsection{H}
+    \begin{itemize}
+        \item 현재 선택된 고슴도치가 카메라 중앙으로 오도록 합니다.
+    \end{itemize}
+    \subsection{Delete}
+    \begin{itemize}
+        \item 팀 체력바가 화면에 보이지 않도록 만듭니다. 
+    \end{itemize}
+    
+    
+    \section{게임 옵션과 채팅 커맨드}
+    \subsection{ESC}
+    \begin{itemize}
+        \item 게임에서 나갑니다. 
+        \item 임무 패널을 표시합니다. 
+    \end{itemize}
+    \subsection{F12}
+    \begin{itemize}
+        \item 전체화면 혹은 창화면으로 변경합니다. 
+    \end{itemize}
+    \subsection{9 AND 0}
+    \begin{itemize}
+        \item 게임 사운드 볼륨을 낮추거나 키웁니다.
+    \end{itemize}
+    \subsection{P}
+    \begin{itemize}
+        \item 오프라인 모드에서 게임을 일시 중지 시킵니다.
+        \item 라인 모드에서는 AFK모드로 전환합니다.
+        \item 임무 패널을 표시합니다.
+    \end{itemize}
+    \subsection{T}
+    \begin{itemize}
+        \item 채팅 메시지를 보냅니다. 
+    \end{itemize}
+    \subsection{`}
+    \begin{itemize}
+        \item 과거 채팅 기록을 보여줍니다. 
+    \end{itemize}
+    \subsection{C}
+    \begin{itemize}
+        \item 스크린샷을 찍고 저장합니다. 
+    \end{itemize}
+    
+    \section{추가 제어키}
+    \subsection{Y}
+    \begin{itemize}
+        \item 같은 팀끼리만 보이는 채팅을 합니다. 
+    \end{itemize}
+    \subsection{F12}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{9 AND 0}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{P}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{T}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{`}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{C}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    
+    
+    
+     \chapter{발견된 버그 및 기능 향상 제안}
+     \section{발견된 버그}
+
+     \begin{itemize}
+        \item 고무줄이 예상치 못한 곳에서 나타나거나 사라지는 현상 발생합니다.
+          \begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]
+{Image/Rubberband.JPG}
+\caption{고무줄이 나타나거나 사라지는 현상}
+\label{fig:detect}
+\end{figure}
+        \item 바다 맵에서 가장자리로 이동시 CRASH 발생합니다.
+        \item 트레이닝 모드시 몇몇 목표물(탁타겟)이 파괴되지 않을 때 가 있습니다.
+    \end{itemize}
+    
+      \chapter{협업 자료 첨부}
+     
+\end{flushleft}
+\end{document}
