@@ -1,0 +1,41 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{kotex}
+\usepackage{xeCJK}
+\usepackage{CJKutf8}
+\usepackage[pdftex]{graphicx}
+
+\title{OpenSource-02 TeamProject}
+\author{이행석 송남주 하지민}
+
+\begin{document}
+
+    \maketitle
+    \begin{center}
+    \Huge{- OSS Name : HedgeWars -}
+    \end{center}
+    \begin{flushleft}
+    \Large
+[ 키 설명 및 게임 방법 ]
+
+\section{초기 게임 화면}
+    \large
+    1. 팀 체력 바
+    \\
+    2. 고슴도치
+    \\
+    3. 제한 시간
+    \\
+    4. 바람 세기
+    \\
+    5. 무기 메뉴
+    \\
+    6. 채팅
+    \\
+    7. FPS
+
+    \end{flushleft}
+    
+    \center
+
+\end{document}
