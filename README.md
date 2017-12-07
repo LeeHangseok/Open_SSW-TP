@@ -11,8 +11,8 @@ Reason for selection : 현재 많은 오픈 소스 소프트웨어 툴들이 존
 
 # About Hedgewars
 《헷지워즈》는 C++와 Qt, 그리고 프리 파스칼을 사용해 만들어진 슈팅 게임이다. 
-Version : 0.9.17
-Licenses : GNU 일반 공중 사용 허가서 2판
+Version : 0.9.23
+Licenses : GPL
 최초 출시일 : 2006년 11월 24일
 개발 : Hedgewars Project
 출시 : Xeli
