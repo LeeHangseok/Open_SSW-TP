@@ -1,0 +1,182 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{kotex}
+\usepackage{xeCJK}
+\usepackage{CJKutf8}
+\usepackage[pdftex]{graphicx}
+
+\title{OpenSourceSW TeamProject-05}
+\author{이행석 송남주 하지민}
+
+\begin{document}
+
+    \maketitle
+    \begin{flushleft}   
+    \tableofcontents{}
+
+    \Large
+    \chapter{1장}
+     \section{1장 부}
+    \chapter{2장}
+     \section{2장 부}
+    \chapter{키 설명 및 게임 방법}
+     \section{초기 게임 화면}
+     \large
+    \subsection{팀 체력바}
+    \begin{itemize}
+        \item 각 팀의 총 체력을 나타냅니다.
+        \item 고슴도치(플레이어가 조종하는 캐릭터, 2번)들이 공격당하면, 해당 고슴도치가 속한 팀의 체력 바가 감소합니다.
+    \end{itemize}
+    \subsection{고슴도치}
+    \begin{itemize}
+        \item 플레이어와 컴퓨터가 움직이는 캐릭터입니다. \item 무기를 들고 상대 고슴도치를 공격해서 상대방의 모든 고슴도치를 잡는 것이 주 목표입니다.
+    \end{itemize}
+    \subsection{제한시간}
+        \begin{itemize}
+        \item 고슴도치가 움직이거나 공격할 수 있는 제한 시간입니다. 
+        \item 제한 시간이 지나면 상대팀에게 턴이 넘어갑니다.
+    \end{itemize}
+    \subsection{바람세기}
+    \begin{itemize}
+        \item 바람이 어느 방향으로 얼마나 세게 부는 지를 나타냅니다.
+        \item 바의 가리키는 방향 표시가 길면 길수록 세기가 강합니다.
+    \end{itemize}
+    \subsection{무기메뉴}
+    \begin{itemize}
+        \item 이번 게임에서 플레이어가 사용할 수 있는 무기를 테이블 형태로 나열해 놓았습니다. 
+        \item 무기 메뉴 중 하나를 선택하면 플레이어가 움직이는 고슴도치가 선택한 무기를 지닙니다.
+        \item 빨간색 원 표시가 있는 회색 무기들은 빨간색 원에 안에 있는 숫자 턴만큼만 해당 무기를 사용할 수 있습니다. 
+    \end{itemize}
+    \subsection{채팅}
+    \begin{itemize}
+        \item 멀티플레이 시 플레이어와 상대방의 가장 최근 대화 내용을 볼 수 있습니다. 
+    \end{itemize}
+    \subsection{FPS}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    
+    \section{기본적인 움직임 및 슈팅}
+    \subsection{Cursor keys}
+    \begin{itemize}
+        \item ← → 키를 이용해 고슴도치를 왼쪽 또는 오른쪽으로 움직일 수 있습니다.
+        \item ↑ ↓ 키를 이용해 무기 조준점을 움직일 수 있습니다.
+    \end{itemize}
+    \subsection{Enter}
+    \begin{itemize}
+        \item 현재 선택된 고슴도치가 앞으로 점프합니다. 
+        \item 너무 높은 곳에서 떨어지면 체력 바가 닳게 됩니다.
+        \item 로프나 비행접시를 사용해 이동하는 동안, 엔터를 활용해서 무기를 던지거나 떨어트릴 수 있습니다. 예를 들어, 로프를 사용하면서 다이너마이트를 떨어트릴 수 있습니다.
+    \end{itemize}
+    \subsection{Backspace}
+    \begin{itemize}
+        \item 한 번 누르면 수직으로 점프하고
+ 두 번 누르면 뒤로 점프합니다. 
+        \item 백스페이스를 두 번째 누를 때 좀 더 긴 시간을 두고 누르면 더 높게 점프합니다.
+    \end{itemize}
+    \subsection{Left Shift}
+    \begin{itemize}
+        \item 표적을 정확히 조준할 때 사용합니다. 
+        \item 시프트를 누른 채 조준 키를 움직여 천천히 조준점을 이동하여 정밀 사격이 가능합니다.
+        \item  이 키를 누른 상태에서 왼쪽이나 오른쪽으로 움직여도 움직이지 않고 제자리에서 방향 전환만 합니다.
+    \end{itemize}
+    \subsection{Mouse clicks}
+    \begin{itemize}
+        \item 마우스 오른쪽을 클릭하면 무기 메뉴를 보여줍니다.
+        \item 마우스 왼쪽을 클릭하면 메뉴에서 무기를 선택하거나, 공습과 같은 공격 타겟을 설정할 수 있습니다.
+    \end{itemize}
+    \subsection{Space bar}
+    \begin{itemize}
+        \item 플레이어의 고슴도치가 선택한 무기를 가지고 조준하고 있는 방향으로 공격할 수 하도록 만듭니다.
+        \item 길게 누를수록 무기를 발사하는 힘이 강해집니다.
+    \end{itemize}
+    
+    \section{조준 및 무기 변경}
+    \subsection{F1 TO F10}
+    \begin{itemize}
+        \item 마우스 오른쪽 버튼을 클릭하는 대신 F1-F10을 사용해 무기를 변경할 수 있습니다.
+    \end{itemize}
+    \subsection{1 TO 5}
+    \begin{itemize}
+        \item 수류탄과 같은 일정 시간 후 폭발하는 무기의 시간을 설정할 수 있습니다. 
+    \end{itemize}
+    \subsection{TAB}
+    \begin{itemize}
+        \item 플레이어가 가지고 있는 고슴도치 내에서 움직이고자하는 고슴도치를 전환합니다. 
+    \end{itemize}
+    \subsection{H}
+    \begin{itemize}
+        \item 현재 선택된 고슴도치가 카메라 중앙으로 오도록 합니다.
+    \end{itemize}
+    \subsection{Delete}
+    \begin{itemize}
+        \item 팀 체력바가 화면에 보이지 않도록 만듭니다. 
+    \end{itemize}
+    
+    
+    \section{게임 옵션과 채팅 커맨드}
+    \subsection{ESC}
+    \begin{itemize}
+        \item 게임에서 나갑니다. 
+        \item 임무 패널을 표시합니다. 
+    \end{itemize}
+    \subsection{F12}
+    \begin{itemize}
+        \item 전체화면 혹은 창화면으로 변경합니다. 
+    \end{itemize}
+    \subsection{9 AND 0}
+    \begin{itemize}
+        \item 게임 사운드 볼륨을 낮추거나 키웁니다.
+    \end{itemize}
+    \subsection{P}
+    \begin{itemize}
+        \item 오프라인 모드에서 게임을 일시 중지 시킵니다.
+        \item 라인 모드에서는 AFK모드로 전환합니다.
+        \item 임무 패널을 표시합니다.
+    \end{itemize}
+    \subsection{T}
+    \begin{itemize}
+        \item 채팅 메시지를 보냅니다. 
+    \end{itemize}
+    \subsection{`}
+    \begin{itemize}
+        \item 과거 채팅 기록을 보여줍니다. 
+    \end{itemize}
+    \subsection{C}
+    \begin{itemize}
+        \item 스크린샷을 찍고 저장합니다. 
+    \end{itemize}
+    
+    \section{추가 제어키}
+    \subsection{Y}
+    \begin{itemize}
+        \item 같은 팀끼리만 보이는 채팅을 합니다. 
+    \end{itemize}
+    \subsection{F12}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{9 AND 0}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{P}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{T}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{`}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    \subsection{C}
+    \begin{itemize}
+        \item 게임 진행 간 초당 프레임 수를 나타냅니다. 
+    \end{itemize}
+    
+    \end{flushleft}
+
+\end{document}
